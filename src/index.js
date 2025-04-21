@@ -1,1 +1,3 @@
-import {print} from './file';
+import print from './file';
+
+print();
