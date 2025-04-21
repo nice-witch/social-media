@@ -1,3 +1,3 @@
 import print from './file';
 
-print();
+print(123);

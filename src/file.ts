@@ -1,3 +1,5 @@
-export default function print() {
-    console.log('FUNCTION')
+export default function print(args: number): string {
+    console.log('FUNCTION');
+
+    return '';
 }
