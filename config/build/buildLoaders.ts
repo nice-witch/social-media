@@ -17,7 +17,7 @@ export function buildLoaders({isDev}: BuildOptions):webpack.RuleSetRule[] {
                 loader: "css-loader",
                 options: {
                     modules: {
-                        auto: ((resourcePath: string) => resourcePath.includes('.modules.')),
+                        auto: ((resourcePath: string) => resourcePath.includes('.module.')),
                         localIdentName: isDev ? '[path][name]__[local]' : "[hash:base64]",
                     }
                 },
