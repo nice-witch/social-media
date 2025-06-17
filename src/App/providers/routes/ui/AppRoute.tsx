@@ -9,7 +9,7 @@ function AppRoute() {
             <Routes>
                 {Object.values(routeConfig).map(({path, element}) => (
                     <Route key={path} path={path} element={
-                        <div className='page-wrapper'>
+                        <div className='pageWrapper'>
                             {element}
                         </div>
                     } />

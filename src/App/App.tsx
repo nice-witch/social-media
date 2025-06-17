@@ -11,7 +11,7 @@ function App(){
     return (
         <div className={classNames('app', {}, [theme])}>
             <Navbar />
-            <div className="content-page">
+            <div className="contentPage">
                 <Sidebar />
                 <AppRoute />
             </div>
