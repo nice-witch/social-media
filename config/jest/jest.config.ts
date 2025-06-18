@@ -3,6 +3,7 @@
  * https://jestjs.io/docs/configuration
  */
 
+// @ts-ignore
 import type {Config} from 'jest';
 
 const config: Config = {
@@ -28,9 +29,9 @@ const config: Config = {
   // coverageDirectory: undefined,
 
   // An array of regexp pattern strings used to skip coverage collection
-  coveragePathIgnorePatterns: [
-    "\\\\node_modules\\\\"
-  ],
+  // coveragePathIgnorePatterns: [
+  //   "\\\\node_modules\\\\"
+  // ],
 
   // Indicates which provider should be used to instrument code for coverage
   // coverageProvider: "babel",
@@ -73,23 +74,23 @@ const config: Config = {
   // maxWorkers: "50%",
 
   // An array of directory names to be searched recursively up from the requiring module's location
-  moduleDirectories: [
-    "node_modules"
-  ],
+  // moduleDirectories: [
+  //   "node_modules"
+  // ],
 
   // An array of file extensions your modules use
-  moduleFileExtensions: [
-    "js",
-    "mjs",
-    "cjs",
-    "jsx",
-    "ts",
-    "mts",
-    "cts",
-    "tsx",
-    "json",
-    "node"
-  ],
+  // moduleFileExtensions: [
+  //   "js",
+  //   "mjs",
+  //   "cjs",
+  //   "jsx",
+  //   "ts",
+  //   "mts",
+  //   "cts",
+  //   "tsx",
+  //   "json",
+  //   "node"
+  // ],
 
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
   // moduleNameMapper: {},
@@ -125,7 +126,7 @@ const config: Config = {
   // restoreMocks: false,
 
   // The root directory that Jest should scan for tests and modules within
-  rootDir: '../../',
+  // rootDir: undefined,
 
   // A list of paths to directories that Jest should use to search for files in
   // roots: [
@@ -157,9 +158,10 @@ const config: Config = {
   // testLocationInResults: false,
 
   // The glob patterns Jest uses to detect test files
-  testMatch: [
-    '<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)'
-  ],
+  // testMatch: [
+  //   "**/__tests__/**/*.?([mc])[jt]s?(x)",
+  //   "**/?(*.)+(spec|test).?([mc])[jt]s?(x)"
+  // ],
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
   // testPathIgnorePatterns: [
