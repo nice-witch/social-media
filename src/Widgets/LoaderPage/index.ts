@@ -1,3 +1,3 @@
-import {LoaderPage} from "Widgets/LoaderPage/ui/LoaderPage";
+import {LoaderPage} from "./ui/LoaderPage";
 
 export {LoaderPage}

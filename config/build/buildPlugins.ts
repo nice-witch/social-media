@@ -2,6 +2,7 @@ import webpack from "webpack";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import ReactRefreshPlugin from "@pmmmwh/react-refresh-webpack-plugin";
+import { BundleAnalyzerPlugin } from "webpack-bundle-analyzer";
 
 export function buildPlugins(htmlPath:string, isDev: boolean): webpack.ProgressPlugin[] {
     return [
@@ -18,5 +19,8 @@ export function buildPlugins(htmlPath:string, isDev: boolean): webpack.ProgressP
         }),
         isDev && (new ReactRefreshPlugin()),
         isDev && (new webpack.HotModuleReplacementPlugin()),
+        new BundleAnalyzerPlugin({
+            openAnalyzer: false,
+        }),
     ]
 }
