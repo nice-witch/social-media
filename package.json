@@ -13,7 +13,8 @@
     "lint:scss:fix": "stylelint \"**/*.scss\" --fix",
     "unit": "jest",
     "storybook": "storybook dev -p 6006 -c ./config/storybook",
-    "build-storybook": "storybook build -c ./config/storybook"
+    "build-storybook": "storybook build -c ./config/storybook",
+    "chromatic": "chromatic --project-token=chpt_b77ff0cb5d393c3"
   },
   "keywords": [],
   "author": "",
@@ -42,6 +43,7 @@
     "@types/webpack-bundle-analyzer": "^4.4.1",
     "@types/webpack-dev-server": "^4.7.2",
     "babel-jest": "^30.0.0",
+    "chromatic": "^13.1.2",
     "css-loader": "^6.6.0",
     "eslint": "^9.29.0",
     "eslint-plugin-i18next": "^6.1.1",
