@@ -31,8 +31,15 @@ jobs:
       - name: Lint CSS file
         run: npm run lint:scss
 
-      # Запуск тестов
       # Запуск сторибука
+      - name: Storybook build
+        run: npm run storybook:build
+
+      # Запуск тестов
+      - name: Unit testing
+        run: npm run test:unit
+      - name: UI testing
+        run: npm run test:ui
 
       # Проверка сборки проекта
       - name: Build production project
