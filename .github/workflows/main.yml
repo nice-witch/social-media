@@ -1,0 +1,39 @@
+name: linting, testing, building
+on:
+  push:
+    branches: ['main']
+  pull_request:
+    branches: ['main']
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [ 18.x ]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      # Устанавливаем Node.js
+      - name: Staring Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      # Устанавливаем зависимости
+      - name: Install dependencies
+        run: npm install
+
+      # Запускаем линтеры
+      - name: Lint TS file
+        run: npm run lint:ts
+      - name: Lint CSS file
+        run: npm run lint:scss
+
+      # Запуск тестов
+      # Запуск сторибука
+
+      # Проверка сборки проекта
+      - name: Build production project
+        run: npm run build:prod

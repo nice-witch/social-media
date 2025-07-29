@@ -11,10 +11,10 @@
     "lint:ts:fix": "eslint \"**/*.{ts,tsx}\" --fix",
     "lint:scss": "stylelint \"**/*.scss\"",
     "lint:scss:fix": "stylelint \"**/*.scss\" --fix",
-    "unit": "jest",
     "storybook": "storybook dev -p 6006 -c ./config/storybook",
-    "build-storybook": "storybook build -c ./config/storybook",
-    "chromatic": "chromatic --project-token=chpt_b77ff0cb5d393c3"
+    "storybook:build": "storybook build -c ./config/storybook",
+    "test:unit": "jest",
+    "test:ui": "chromatic --project-token=chpt_b77ff0cb5d393c3"
   },
   "keywords": [],
   "author": "",
