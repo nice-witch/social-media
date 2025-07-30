@@ -9,7 +9,7 @@ enum Pages {
     NOT_FOUND = 'not_found',
 }
 
-const pagesPath: Record<Pages, string> = {
+export const pagesPath: Record<Pages, string> = {
     [Pages.MAIN]: '/',
     [Pages.ABOUT]: '/about',
     [Pages.NOT_FOUND]: '/*',
