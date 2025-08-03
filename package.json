@@ -14,7 +14,7 @@
     "storybook": "storybook dev -p 6006 -c ./config/storybook",
     "storybook:build": "storybook build -c ./config/storybook",
     "test:unit": "jest",
-    "test:ui": "chromatic"
+    "test:ui": "chromatic -b storybook:build"
   },
   "keywords": [],
   "author": "",
