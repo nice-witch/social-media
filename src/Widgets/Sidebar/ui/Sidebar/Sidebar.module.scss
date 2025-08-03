@@ -6,8 +6,30 @@
   transition: width 0.4s;
 }
 
-.collapse {
-  width: var(--sidebar-width-collapse);;
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px 15px;
+  transition: padding 0.2s;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.itemText {
+  display: block;
+  opacity: 1;
+  transition: all 0.2s;
+}
+
+.buttonCollapse {
+  position: absolute;
+  right: -40px;
+  bottom: 40px;
 }
 
 .buttons {
@@ -19,4 +41,21 @@
   flex-wrap: wrap;
   gap: 15px;
   bottom: 20px;
+}
+
+.collapse {
+  width: var(--sidebar-width-collapse);
+
+  .navigation {
+    padding: 10px 0;
+  }
+
+  .item {
+    justify-content: center;
+  }
+
+  .itemText {
+    opacity: 0;
+    display: none;
+  }
 }

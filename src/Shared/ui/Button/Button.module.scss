@@ -1,17 +1,55 @@
 .button {
   display: flex;
+  padding: 6px 15px;
   cursor: pointer;
-  color: inherit;
+  outline: none;
+  border: none;
 }
 
 .clear {
-  border: none;
+  padding: 0;
   background: transparent;
 }
 
 .outline {
-  padding: 10px 15px;
   border: 1px solid var(--primary-color);
   color: var(--primary-color);
   background: transparent;
+}
+
+.background {
+  background-color: var(--inverted-bg-color);
+  color: var(--inverted-primary-color);
+}
+
+.square {
+  padding: 0;
+  justify-content: center;
+}
+
+.square.buttonM {
+  width: var(--font-line-m);
+  height: var(--font-line-m);
+}
+
+.square.buttonL {
+  width: var(--font-line-l);
+  height: var(--font-line-l);
+}
+
+.square.buttonXL {
+  width: var(--font-line-xl);
+  height: var(--font-line-xl);
+}
+
+.buttonM {
+  font: var(--font-m);
+}
+
+.buttonL {
+  font: var(--font-l);
+}
+
+.buttonXL {
+  font: var(--font-xl);
 }
