@@ -1,4 +1,3 @@
-import './styles/index.scss'
 import {classNames} from "Shared/lib/classNames/classNames";
 import {useTheme} from "App/providers/themeProvider";
 import {AppRoute} from "App/providers/routes";
@@ -15,6 +14,7 @@ function App(){
                 <Sidebar />
                 <AppRoute />
             </div>
+            <div id="modal-root"></div>
         </div>
 )
 }

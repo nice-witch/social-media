@@ -1,0 +1,26 @@
+.modal {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  inset: 0;
+  background: var(--modal-background);
+  z-index: var(--modal-index);
+  transition: opacity 0.3s ease;
+}
+
+.content {
+  width: 60%;
+  padding: 20px;
+  border-radius: 15px;
+  background: var(--bg-color);
+}
+
+.open {
+  opacity: 1;
+}
+
+.close {
+  opacity: 0;
+  pointer-events: none;
+}
