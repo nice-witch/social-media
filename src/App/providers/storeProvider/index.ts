@@ -1,5 +1,8 @@
-import {StoreProvider} from "App/providers/storeProvider/ui/StoreProvider";
-
+import {StoreProvider} from "./ui/StoreProvider";
+import type {StateShcema} from "./config/StateShcema";
+import {creatReduxStore} from "./config/store"
 export {
-    StoreProvider
+    StoreProvider,
+    StateShcema,
+    creatReduxStore
 }
